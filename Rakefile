@@ -80,7 +80,7 @@ namespace :heroku do
 
       #heroku addons:open scheduler
       Formatador.display_lines([
-        "[negative]<> Add `[bold]rake fetch_feed[/][negative]` hourly task at [underline]https://api.heroku.com/apps/#{app_data['id']}/addons/scheduler:standard[/]",
+        "[negative]<> Add `[bold]rake fetch_feeds[/][negative]` hourly task at [underline]https://api.heroku.com/apps/#{app_data['id']}/addons/scheduler:standard[/]",
         "[negative]<> Impatient? After adding feeds, immediately fetch the latest with `heroku run rake fetch_feeds -a #{app_data['name']}`",
         "[negative]<> stringer available at [underline]#{app_data['web_url']}[/]"
       ])
